@@ -1,0 +1,541 @@
+{
+  "note": "Sample/placeholder school dataset for the AI Stream Recommendation System. This does NOT contain every South African high school. Add more schools by appending objects with the same structure (id, province, municipality, name, subjects, streams) to this file.",
+  "schools": [
+    {
+      "id": "sch-001",
+      "province": "Gauteng",
+      "municipality": "Johannesburg",
+      "name": "Parktown High School for Girls",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "History",
+        "Geography",
+        "Religion Studies",
+        "Visual Arts",
+        "Dramatic Arts",
+        "Consumer Studies",
+        "Tourism"
+      ],
+      "streams": [
+        "Science",
+        "Commerce",
+        "Humanities"
+      ]
+    },
+    {
+      "id": "sch-002",
+      "province": "Gauteng",
+      "municipality": "Centurion",
+      "name": "Hoerskool Centurion",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "History",
+        "Geography",
+        "Religion Studies",
+        "Visual Arts",
+        "Dramatic Arts",
+        "Consumer Studies",
+        "Tourism",
+        "Engineering Graphics and Design",
+        "Technical Mathematics",
+        "Technical Sciences",
+        "Civil Technology",
+        "Electrical Technology"
+      ],
+      "streams": [
+        "Science",
+        "Commerce",
+        "Humanities",
+        "Technical/Vocational"
+      ]
+    },
+    {
+      "id": "sch-003",
+      "province": "KwaZulu-Natal",
+      "municipality": "Durban",
+      "name": "Durban High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "History",
+        "Geography",
+        "Religion Studies",
+        "Visual Arts",
+        "Dramatic Arts",
+        "Consumer Studies",
+        "Tourism"
+      ],
+      "streams": [
+        "Science",
+        "Commerce",
+        "Humanities"
+      ]
+    },
+    {
+      "id": "sch-004",
+      "province": "KwaZulu-Natal",
+      "municipality": "Westville",
+      "name": "Westville Boys' High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Accounting",
+        "Business Studies",
+        "Economics"
+      ],
+      "streams": [
+        "Science",
+        "Commerce"
+      ]
+    },
+    {
+      "id": "sch-005",
+      "province": "Western Cape",
+      "municipality": "Cape Town",
+      "name": "Rondebosch Boys' High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "History",
+        "Geography",
+        "Religion Studies",
+        "Visual Arts",
+        "Dramatic Arts",
+        "Consumer Studies",
+        "Tourism"
+      ],
+      "streams": [
+        "Science",
+        "Commerce",
+        "Humanities"
+      ]
+    },
+    {
+      "id": "sch-006",
+      "province": "Western Cape",
+      "municipality": "Bellville",
+      "name": "Bellville High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "Engineering Graphics and Design",
+        "Technical Mathematics",
+        "Technical Sciences",
+        "Civil Technology",
+        "Electrical Technology"
+      ],
+      "streams": [
+        "Science",
+        "Commerce",
+        "Technical/Vocational"
+      ]
+    },
+    {
+      "id": "sch-007",
+      "province": "Eastern Cape",
+      "municipality": "Gqeberha",
+      "name": "Grey High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "History",
+        "Geography",
+        "Religion Studies",
+        "Visual Arts",
+        "Dramatic Arts",
+        "Consumer Studies",
+        "Tourism"
+      ],
+      "streams": [
+        "Science",
+        "Commerce",
+        "Humanities"
+      ]
+    },
+    {
+      "id": "sch-008",
+      "province": "Eastern Cape",
+      "municipality": "Komani",
+      "name": "Queenstown Girls High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "History",
+        "Geography",
+        "Religion Studies",
+        "Visual Arts",
+        "Dramatic Arts",
+        "Consumer Studies",
+        "Tourism"
+      ],
+      "streams": [
+        "Commerce",
+        "Humanities"
+      ]
+    },
+    {
+      "id": "sch-009",
+      "province": "Limpopo",
+      "municipality": "Mokopane",
+      "name": "Mokopane High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "History",
+        "Geography",
+        "Religion Studies",
+        "Visual Arts",
+        "Dramatic Arts",
+        "Consumer Studies",
+        "Tourism"
+      ],
+      "streams": [
+        "Science",
+        "Commerce",
+        "Humanities"
+      ]
+    },
+    {
+      "id": "sch-010",
+      "province": "Limpopo",
+      "municipality": "Polokwane",
+      "name": "Capricorn High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Engineering Graphics and Design",
+        "Technical Mathematics",
+        "Technical Sciences",
+        "Civil Technology",
+        "Electrical Technology"
+      ],
+      "streams": [
+        "Science",
+        "Technical/Vocational"
+      ]
+    },
+    {
+      "id": "sch-011",
+      "province": "Mpumalanga",
+      "municipality": "Mbombela",
+      "name": "Nelspruit High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "History",
+        "Geography",
+        "Religion Studies",
+        "Visual Arts",
+        "Dramatic Arts",
+        "Consumer Studies",
+        "Tourism"
+      ],
+      "streams": [
+        "Science",
+        "Commerce",
+        "Humanities"
+      ]
+    },
+    {
+      "id": "sch-012",
+      "province": "Mpumalanga",
+      "municipality": "Middelburg",
+      "name": "Middelburg High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "Engineering Graphics and Design",
+        "Technical Mathematics",
+        "Technical Sciences",
+        "Civil Technology",
+        "Electrical Technology"
+      ],
+      "streams": [
+        "Commerce",
+        "Technical/Vocational"
+      ]
+    },
+    {
+      "id": "sch-013",
+      "province": "North West",
+      "municipality": "Potchefstroom",
+      "name": "Potchefstroom Gimnasium",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "History",
+        "Geography",
+        "Religion Studies",
+        "Visual Arts",
+        "Dramatic Arts",
+        "Consumer Studies",
+        "Tourism"
+      ],
+      "streams": [
+        "Science",
+        "Commerce",
+        "Humanities"
+      ]
+    },
+    {
+      "id": "sch-014",
+      "province": "North West",
+      "municipality": "Mahikeng",
+      "name": "Mahikeng High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "History",
+        "Geography",
+        "Religion Studies",
+        "Visual Arts",
+        "Dramatic Arts",
+        "Consumer Studies",
+        "Tourism"
+      ],
+      "streams": [
+        "Commerce",
+        "Humanities"
+      ]
+    },
+    {
+      "id": "sch-015",
+      "province": "Free State",
+      "municipality": "Bloemfontein",
+      "name": "Grey College",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "History",
+        "Geography",
+        "Religion Studies",
+        "Visual Arts",
+        "Dramatic Arts",
+        "Consumer Studies",
+        "Tourism"
+      ],
+      "streams": [
+        "Science",
+        "Commerce",
+        "Humanities"
+      ]
+    },
+    {
+      "id": "sch-016",
+      "province": "Free State",
+      "municipality": "Welkom",
+      "name": "Welkom High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Engineering Graphics and Design",
+        "Technical Mathematics",
+        "Technical Sciences",
+        "Civil Technology",
+        "Electrical Technology"
+      ],
+      "streams": [
+        "Science",
+        "Technical/Vocational"
+      ]
+    },
+    {
+      "id": "sch-017",
+      "province": "Northern Cape",
+      "municipality": "Kimberley",
+      "name": "Kimberley Girls' High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "History",
+        "Geography",
+        "Religion Studies",
+        "Visual Arts",
+        "Dramatic Arts",
+        "Consumer Studies",
+        "Tourism"
+      ],
+      "streams": [
+        "Commerce",
+        "Humanities"
+      ]
+    },
+    {
+      "id": "sch-018",
+      "province": "Northern Cape",
+      "municipality": "Upington",
+      "name": "Upington High School",
+      "subjects": [
+        "Mathematics",
+        "Mathematical Literacy",
+        "Home Language",
+        "First Additional Language",
+        "Life Orientation",
+        "Physical Sciences",
+        "Life Sciences",
+        "Information Technology",
+        "Computer Applications Technology",
+        "Accounting",
+        "Business Studies",
+        "Economics",
+        "Engineering Graphics and Design",
+        "Technical Mathematics",
+        "Technical Sciences",
+        "Civil Technology",
+        "Electrical Technology"
+      ],
+      "streams": [
+        "Science",
+        "Commerce",
+        "Technical/Vocational"
+      ]
+    }
+  ]
+}
