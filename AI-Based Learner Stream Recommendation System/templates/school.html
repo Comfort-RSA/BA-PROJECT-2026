@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Select your school — Stream Advisor{% endblock %}
+{% block content %}
+<div class="wrap">
+  {% if error %}<div class="error-banner">{{ error }}</div>{% endif %}
+  <div class="paper-panel">
+    <span class="step-label">Optional — Step 1 of 3</span>
+    <h2>Select your high school</h2>
+    <p>Search for your school to see the subjects and streams it offers.
+       We'll use this to check your recommendation against what's actually
+       available at your school.</p>
+
+    <form method="POST" action="{{ url_for('select_school') }}">
+      <div class="school-search-wrap">
+        <input type="text" id="school-search-input" autocomplete="off"
+               placeholder="Search or select your school…">
+        <ul id="school-results" class="school-results"></ul>
+      </div>
+      <input type="hidden" id="school-name-field" name="school_name" value="">
+
+      <div id="selected-school-card" class="selected-school-card">
+        <h3 id="selected-school-name"></h3>
+        <div class="school-location" id="selected-school-location"></div>
+
+        <div class="tag-group">
+          <span class="tag-group-label">Streams offered</span>
+          <div id="selected-school-streams"></div>
+        </div>
+
+        <div class="tag-group">
+          <span class="tag-group-label">Subjects offered</span>
+          <div id="selected-school-subjects"></div>
+        </div>
+      </div>
+
+      <div class="school-picker-actions">
+        <button type="submit" id="school-submit-btn" class="btn btn-primary" disabled>
+          Continue with this school 
+        </button>
+        <a href="{{ url_for('skip_school') }}" class="btn-link">Skip selecting my high school</a>
+      </div>
+    </form>
+
+    <p class="dataset-note">
+      This school list is a starting sample covering all nine provinces, not
+      a complete database of every South African high school. More schools
+      can be added at any time — see the project README.
+    </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='school-search.js') }}"></script>
+{% endblock %}

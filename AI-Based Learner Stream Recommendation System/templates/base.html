@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Stream Advisor{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <div class="brand">Stream Advisor<span class="dot">.</span></div>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('select_school') }}">Stream Recommendation</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="page-body">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">Stream Advisor<span class="dot">.</span></div>
+          <p>An AI-based system that helps Grade 9 learners make more informed
+             Grade 10 stream choices, using their academic marks, interests
+             and career goals — combined by machine learning and NLP.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('select_school') }}">Stream Recommendation</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><a href="mailto:{{ project_email }}">{{ project_email }}</a></p>
+          <h4 style="margin-top:18px;">Project</h4>
+          <p><a href="{{ project_url }}" target="_blank" rel="noopener">AI Stream Recommendation Project</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 AI Stream Recommendation System. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}About — Stream Advisor{% endblock %}
+{% block content %}
+<div class="wrap">
+  <section class="hero" style="padding-top: 48px;">
+    <div class="eyebrow">About the project</div>
+    <h1 style="max-width: 20ch;">What is AI Stream Recommendation?</h1>
+    <p class="lede">
+      AI Stream Recommendation is a system built to help Grade 9 learners
+      make better-informed decisions when moving into Grade 10, by combining
+      their academic performance, interests and career goals into one clear,
+      explainable recommendation.
+    </p>
+  </section>
+
+  <section class="about-section">
+    <h2>Why this project exists</h2>
+    <p>Choosing a Grade 10 stream is one of the first big decisions a learner
+       makes about their future, but it's often made under pressure rather
+       than with good information. Learners can struggle to decide because of:</p>
+    <ul>
+      <li>Pressure from parents to follow a particular path</li>
+      <li>Influence from friends choosing the same stream</li>
+      <li>A lack of clear career information</li>
+      <li>Uncertainty about their own academic strengths</li>
+      <li>Not understanding which subjects suit which future careers</li>
+    </ul>
+    <p>This tool looks at a learner's actual Grade 9 marks alongside what
+       they say about their interests and career goals, and turns that into
+       a personalised, explained recommendation.</p>
+  </section>
+
+  <section class="about-section">
+    <h2>How it helps Grade 9 learners</h2>
+    <ul>
+      <li>Understand their academic strengths across nine subjects</li>
+      <li>Explore which Grade 10 stream realistically suits them</li>
+      <li>Connect subjects with possible careers</li>
+      <li>Make a more informed, confident decision</li>
+      <li>Reduce uncertainty by seeing the reasoning behind the result</li>
+      <li>Check the recommendation against what their own school offers</li>
+    </ul>
+  </section>
+
+  <section class="about-section">
+    <h2>How it works</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Machine learning</h3>
+        <p>A Random Forest model trained on Grade 9 marks across nine
+        subjects, learning which mark patterns tend to fit which stream.</p>
+      </div>
+      <div class="about-card">
+        <h3>NLP chatbot</h3>
+        <p>Reads what a learner says about their interests and career goals,
+        and matches the language used against each stream.</p>
+      </div>
+      <div class="about-card">
+        <h3>Combined score</h3>
+        <p>Marks and interests are weighted 60/40 and combined into one fit
+        percentage &mdash; more reliable than either signal alone.</p>
+      </div>
+      <div class="about-card">
+        <h3>School-aware</h3>
+        <p>When a learner selects their high school, the recommendation is
+        checked against the streams that school actually offers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="disclaimer-box">
+      <strong>Not a replacement for guidance.</strong>
+      This tool gives a second opinion, not a decision. It does not replace
+      your teachers, parents, school counsellors or professional career
+      guidance &mdash; please talk to them too before choosing a stream.
+    </div>
+  </section>
+</div>
+{% endblock %}

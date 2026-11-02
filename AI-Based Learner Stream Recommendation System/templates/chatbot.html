@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Tell us about you — Stream Advisor{% endblock %}
+{% block content %}
+<div class="wrap">
+  {% if error %}<div class="error-banner">{{ error }}</div>{% endif %}
+  <div class="paper-panel">
+    <span class="step-label">Step {{ '3' if school else '2' }} of {{ '3' if school else '2' }}</span>
+    <h2>A couple of questions</h2>
+    <p>Answer honestly &mdash; there's no right answer here.</p>
+
+    <form method="POST" action="{{ url_for('chatbot') }}">
+      <div class="answer-block">
+        <div class="q">What subjects do you enjoy most, and why?</div>
+        <textarea name="interest_text" rows="3" placeholder="e.g. I enjoy Maths and Science because I like solving problems and learning how things work." required>{{ request.form.get('interest_text', '') }}</textarea>
+      </div>
+
+      <div class="answer-block">
+        <div class="q">What career are you interested in?</div>
+        <input type="text" name="career_text" placeholder="e.g. Engineer" value="{{ request.form.get('career_text', '') }}" required>
+      </div>
+
+      <div class="form-footer">
+        <button type="submit" class="btn btn-primary">Get my recommendation &rarr;</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

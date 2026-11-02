@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Assessment — Stream Advisor{% endblock %}
+{% block content %}
+<div class="wrap">
+  {% if error %}<div class="error-banner">{{ error }}</div>{% endif %}
+
+  {% if school %}
+  <div class="school-banner" style="margin-top:32px;">
+    <span>School selected: <strong>{{ school.name }}</strong> ({{ school.municipality }}, {{ school.province }})</span>
+    <a href="{{ url_for('select_school') }}">Change</a>
+  </div>
+  {% endif %}
+
+  <div class="paper-panel">
+    <span class="step-label">Step {{ '2' if school else '1' }} of {{ '3' if school else '2' }}</span>
+    <h2>Your Grade 9 marks</h2>
+    <p>Enter your final mark for each subject, as a percentage.</p>
+
+    <form method="POST" action="{{ url_for('assessment') }}">
+      {% for field, label in fields %}
+      <div class="report-row">
+        <label for="{{ field }}">{{ label }}</label>
+        <span class="leader"></span>
+        <span>
+          <input type="number" id="{{ field }}" name="{{ field }}" min="0" max="100" step="0.1"
+                 value="{{ request.form.get(field, '') }}" required>
+          <span class="pct">%</span>
+        </span>
+      </div>
+      {% endfor %}
+
+      <div class="form-footer">
+        <button type="submit" class="btn btn-primary">Continue to interests &rarr;</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

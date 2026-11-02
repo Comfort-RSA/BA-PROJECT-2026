@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Stream Advisor — AI Stream Recommendation{% endblock %}
+{% block content %}
+<div class="wrap">
+  <section class="hero">
+    <div class="eyebrow">Grade 9 to Grade 10</div>
+    <h1>AI Stream Recommendation</h1>
+    <p class="lede">
+      Helping Grade 9 learners make informed Grade 10 stream choices based
+      on their academic performance, interests and career goals and not on
+      what a parent or friend decided for them.
+    </p>
+    <a href="{{ url_for('select_school') }}" class="btn btn-primary">Start Your Recommendation </a>
+
+    <div class="timetable-strip">
+      <div class="cell"><span class="label">1</span>Select your school &amp; enter your marks</div>
+      <div class="cell"><span class="label">2</span>Answer two questions about your interests</div>
+      <div class="cell"><span class="label">3</span>Get your personalised stream recommendation</div>
+    </div>
+
+    <p class="hero-note">
+      This tool won't make the decision for you, 
+      but it can provide an extra data-driven recommendation to help you make a more informed choice.
+    </p>
+  </section>
+</div>
+{% endblock %}
